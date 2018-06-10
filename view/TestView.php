@@ -9,7 +9,7 @@
 	<?php 
 		if($result) {
 			while($row = $result->fetch_array()){
-				echo $row['school'] . "\t" . $row['place_name'] . "\n";
+				echo $row['school'] . "\n" . $row['place_name'] . "\n";
 			}
 
 		} else { 

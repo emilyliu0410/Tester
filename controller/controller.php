@@ -6,9 +6,8 @@ Class TestController
 
 		$model = new AbstractModel();
 
-		$education = $model->selectQuery('Education');
+		$result = $model->selectQuery('Education');
 
-		$education = $this->selectQuery($statement, $conn);
 		
 		include ('././view/TestView.php');
 
