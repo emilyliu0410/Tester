@@ -95,10 +95,9 @@
             <div class="row">
                 <div class="col-lg-4">
                     <?php 
-        				if($result) {
-            				while($row = $result->fetch_array()){
+        				if($result and $row = $result->fetch_array()){
                 				echo nl2br($row['school'] . "\n" . $row['place_name'] . "\n" . $row['start_date'] . "-" . $row['end_date'] . "\n" . $row['description'] . "\n");
-           					}
+           				
         				} else { 
             				echo "empty";
         					}
