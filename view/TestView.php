@@ -82,7 +82,7 @@
         </div>
     </section>
 
-    <section id="education" style="background-color: #dddddd">
+    <section id="education" style="background-color: #dddddd;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center" style="color: #ffcc00;">
@@ -92,41 +92,23 @@
                                 box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 1);">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4">
+  		</div>
+  		<div style="margin-left: 30px; margin-left: 30px; ">
                     <?php 
-        				if($result and $row = $result->fetch_array()){
-                				echo nl2br($row['school'] . "\n" . $row['place_name'] . "\n" . $row['start_date'] . "-" . $row['end_date'] . "\n" . $row['description'] . "\n");
+        				if($result){
+        				 while($row = $result->fetch_array()){
+                				echo '<h3>'.$row['school'] . '</h3>' . '<h4>' . $row['place_name'] . '</h4>' . '<h5>' . $row['start_date'] . "-" . $row['end_date'] . '</h5>'. $row['description'] ;
+                				echo nl2br("\n");
+                				echo nl2br("\n");
+        				}
            				
         				} else { 
             				echo "empty";
         					}
     				?>
-                </div>
-                 <div class="col-lg-4">
-                    <?php 
-        				if($result) {
-            				while($row = $result->fetch_array()){
-                				echo $row['school'] . "\t" . $row['place_name'] . "\n";
-           					}
-        				} else { 
-            				echo "empty";
-        					}
-    				?>
-                </div>
-                 <div class="col-lg-4">
-                    <?php 
-        				if($result) {
-            				while($row = $result->fetch_array()){
-                				echo $row['school'] . "\t" . $row['place_name'] . "\n";
-           					}
-        				} else { 
-            				echo "empty";
-        					}
-    				?>
-                </div>
-            </div>
-        </div>
+        </div>       
+            
+        
     </section>
 
         <section id="experience" style="background-color: #ffffff">
