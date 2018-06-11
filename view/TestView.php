@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Emily Liu</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"  href="./css/lines.css">
+    <link rel="stylesheet"  href="./css/profile.css">
+    <link rel="stylesheet"  href="./css/skills.css">
+    <link rel="stylesheet"  href="./css/educations.css">
     <!--border on the top-->
     
     
@@ -12,12 +16,12 @@
 
 <body style = "background-color: #555555">
     <!--homepage button-->
-    <div style="background-color: #000000">
+    <div class="on_the_top">
     	<a  href="file:///Users/liuyingpik1/Downloads/bootstrap-4/test.html">
         	<img src="http://mobilephonetabletrepair.co.uk/image/cache/catalog/Product%20Icons/Home-Button-500x500.png" style="width: 70px; height: 70px;" >
     	</a>
 
-    	<div class="btn-group" style='float:right; '>
+    	<div class="btn-group" style='float:right; padding:10px; '>
         	<button  class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 200px;">
             	≡
         	</button>
@@ -34,13 +38,12 @@
     <header>
           <div class="container" style="color: #ffcc00; height: 530px;">
             <div class="row">
-                <div class="col-lg-12 text-center " >
+                <div class="col-lg-12 text-center " style="padding-top: 100px" >
                 	<p>&nbsp;</p>
                 	<p>&nbsp;</p>
                 	<p>&nbsp;</p>
                     <h2 class="name">Emily Liu</h2>
                     <h3 class="skills">Logic and Computation</h3>
-                    <h3 class="minor">Japanese</h3>
                 </div>
             </div>
         </div>
@@ -51,9 +54,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center" style="color: #ffcc00;">
                         <h2>Profile</h2>
-                        <hr style="height: 20px;
-                                border: 0;
-                                box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 1);">
+                        <hr class="under_header">
                     </div>
                 </div>
                 <div class="row">
@@ -69,9 +70,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center" style="color: #ffcc00;">
                    	<h2>Skills</h2>
-                    <hr style="height: 20px;
-                            border: 0;
-                           	box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 1);">
+                    <hr class="under_header">
                 </div>
             </div>
             <div class="row">
@@ -87,13 +86,11 @@
             <div class="row">
                 <div class="col-lg-12 text-center" style="color: #ffcc00;">
                     <h2>Education</h2>
-                    <hr style="height: 20px;
-                                border: 0;
-                                box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 1);">
+                    <hr class="under_header" >
                 </div>
             </div>
   		</div>
-  		<div style="margin-left: 30px; margin-left: 30px; ">
+  		<div style="margin-left: 100px; margin-right: 100px; ">
                     <?php 
         				if($result){
         				 while($row = $result->fetch_array()){
@@ -116,9 +113,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center" style="color: #ffcc00;">
                         <h2>Experience</h2>
-                        <hr style="height: 20px;
-                                border: 0;
-                                box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 1);">
+                        <hr class="under_header">
                     </div>
                 </div>
                 <div class="row">
