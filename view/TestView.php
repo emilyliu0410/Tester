@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <title>Emily Liu</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet"  href="./css/lines.css">
-    <link rel="stylesheet"  href="./css/profile.css">
-    <link rel="stylesheet"  href="./css/skills.css">
-    <link rel="stylesheet"  href="./css/educations.css">
+    <link rel="stylesheet"  href="view/custom.css">
+    <link rel="stylesheet"  href="view/lines.css">
     <!--border on the top-->
     
     
@@ -25,7 +23,7 @@
         	<button  class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 200px;">
             	≡
         	</button>
-        	<div class="dropdown-menu">
+        	<div class="dropdown-menu" style="width: 200px">
             <a class="dropdown-item" href="#profile">Profile</a>
             <a class="dropdown-item" href="#skills">Skills</a>
             <a class="dropdown-item" href="#education">Education</a>
@@ -81,20 +79,20 @@
         </div>
     </section>
 
-    <section id="education" style="background-color: #dddddd;">
+    <section id="education" class="educations">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center" style="color: #ffcc00;">
+                <div class="col-lg-12 text-center">
                     <h2>Education</h2>
                     <hr class="under_header" >
                 </div>
             </div>
   		</div>
-  		<div style="margin-left: 100px; margin-right: 100px; ">
+  		<div class="ed_information">
                     <?php 
         				if($result){
         				 while($row = $result->fetch_array()){
-                				echo '<h3>'.$row['school'] . '</h3>' . '<h4>' . $row['place_name'] . '</h4>' . '<h5>' . $row['start_date'] . "-" . $row['end_date'] . '</h5>'. $row['description'] ;
+                				echo '<h3>'.$row['school'] . '</h3>' . '<h4s>' . $row['place_name'] . '</h4>' . '<h5>' . $row['start_date'] . "-" . $row['end_date'] . '</h5>'. $row['description'] ;
                 				echo nl2br("\n");
                 				echo nl2br("\n");
         				}

@@ -1,0 +1,56 @@
+.on_the_top{background-color: #000000}
+
+.on_the_top img{width: 70px; height: 70px}
+
+.on_the_top button{right: 0;
+    top: 0;
+ width: 200px;}
+
+ .dm{
+ 	width: 200px
+ }
+
+ .firstpage{
+ 	color: #ffcc00; height: 530px;padding-top: 200px
+ }
+
+
+
+.profile{
+	background-color: #dddddd;
+	height: 500px;padding-top: 50px
+}
+
+.profile h2{
+	color: #ffcc00;
+}
+
+.profile p{
+	color: #000000;
+}
+
+
+
+.skills{
+	background-color: #ffffff
+}
+
+.skills h2 {
+	color: #ffcc00
+}
+
+.educations {
+	background-color: #dddddd;
+}
+
+.educations h2{
+	color: #ffcc00
+}
+
+.educations h4{
+	color: #777777
+}
+
+.ed_information{
+	margin-left: 100px; margin-right: 100px;
+}
