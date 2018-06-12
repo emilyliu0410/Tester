@@ -8,17 +8,17 @@
             </div>
             >
                        <?php if($skill_result) {
-
+                            $count = 0 ;
                             while($row = $skill_result->fetch_array()){
-                                $count = 0 ;
-                                if $count = 0{
+                                
+                                if ($count = 0){
                                     '<div class="row">';
                                 }
                                 '<div class ="col-md-3">';                               
                                     echo '<h3>'.$row['name'] . '</h3>' . $row['category'] . "\n";
                                 '</div>';
                                 $count ++;
-                                if $count = 4{
+                                if ($count = 4){
                                     '</div>';
                                     $count = 0;
                                 }   
