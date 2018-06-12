@@ -6,11 +6,22 @@
                     <hr class="under_header">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
+            >
                        <?php if($skill_result) {
+
                             while($row = $skill_result->fetch_array()){
-                                echo $row['name'] . "\t" . $row['category'] . "\n";
+                                $count = 0 ;
+                                if $count = 0{
+                                    '<div class="row">';
+                                }
+                                '<div class ="col-md-3">';                               
+                                    echo '<h3>'.$row['name'] . '</h3>' . $row['category'] . "\n";
+                                '</div>';
+                                $count ++;
+                                if $count = 4{
+                                    '</div>';
+                                    $count = 0;
+                                }   
                             }
                         } else { 
                             echo "empty";
