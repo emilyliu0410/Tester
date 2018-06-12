@@ -6,29 +6,49 @@
                     <hr class="under_header">
                 </div>
             </div>
+                <h3>Programming skills</h3>
                  <?php 
                  if($skill_result) {
-                    $count = 0 ;
+                    echo '<div class="row">';
+                        
                     while($row = $skill_result->fetch_array()){
                                 
-                        if ($count = 0){
-                            echo '<div class="row">';
-                        }
-                        echo '<div class ="col-md-3">';                               
-                        echo '<h3>'.$row['name'] . '</h3>' . '<h5>' .  $row['category'] . '</h5>';
+                       if ($row['category'] == 'Programming skills'){
+                        echo '<div class ="col-lg-3">';                               
+                        echo '<h3>'.$row['name'] . '</h3>' ;
                         echo '</div>';
-                        $count ++;
-                        if ($count = 4){
-                            echo '</div>';
-                            $count = 0;
-                        }   
-
-                    }
+                        
+                        }
+                    
+                    }   
+                        echo '</div>';
                 } else { 
                     echo "empty";
                 }
                     ?>
-                </div>
-            </div>
+                <h3>Web Design skills</h3>
+                <?php 
+                 if($skill_result) {
+                    echo '<div class="row">';
+                        
+                    while($row = $skill_result->fetch_array()){
+                                
+                       if ($row['category'] == 'Web design skills'){
+                        echo '<div class ="col-lg-3">';
+
+                        echo '<h3>'.$row['name'] . '</h3>' ;
+                        echo '</div>';
+                        
+                        }else{
+                            continue;
+                        }
+                    
+                    }   
+                        echo '</div>';
+                } else { 
+                    echo "empty";
+                }
+                    ?>
+            
         </div>
     </section>
