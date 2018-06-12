@@ -9,6 +9,7 @@ Class TestController
 		$result = $model->selectQuery('Education');
 
 		$skill_result = $model->selectQuery('Skills');
+		$dskill_result = $model->selectQuery('dSkills');
 
 		$experience_result = $model->selectQuery('Experience');
 

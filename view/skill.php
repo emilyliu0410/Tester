@@ -14,41 +14,33 @@
                     while($row = $skill_result->fetch_array()){
                                 
                        if ($row['category'] == 'Programming skills'){
-                        echo '<div class ="col-lg-3">';                               
-                        echo '<h3>'.$row['name'] . '</h3>' ;
-                        echo '</div>';
-                        
+                            echo '<div class ="col-lg-3">';
+                            echo '<h4>'.$row['name'] . '</h4>' ;
+                            echo '</div>';
                         }
-                    
-                    }   
-                        echo '</div>';
+                    }
+                    echo '</div>';
                 } else { 
                     echo "empty";
                 }
-                    ?>
-                <h3>Web Design skills</h3>
+                ?>
+                <h3>Web Design Skill</h3>
                 <?php 
-                 if($skill_result) {
+                 if($dskill_result) {
                     echo '<div class="row">';
                         
-                    while($row = $skill_result->fetch_array()){
+                    while($row = $dskill_result->fetch_array()){
                                 
-                       if ($row['category'] == 'Web design skills'){
-                        echo '<div class ="col-lg-3">';
-
-                        echo '<h3>'.$row['name'] . '</h3>' ;
-                        echo '</div>';
-                        
-                        }else{
-                            continue;
-                        }
-                    
-                    }   
-                        echo '</div>';
+                            echo '<div class ="col-lg-6">';
+                            echo '<h4>'.$row['name'] . '</h4>' ;
+                            echo '</div>';
+                    }
+                    echo '</div>';
                 } else { 
                     echo "empty";
                 }
-                    ?>
-            
+                ?>
+                </div>
+            </div>
         </div>
     </section>
