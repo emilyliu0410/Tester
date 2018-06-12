@@ -6,26 +6,27 @@
                     <hr class="under_header">
                 </div>
             </div>
-            >
-                       <?php if($skill_result) {
-                            $count = 0 ;
-                            while($row = $skill_result->fetch_array()){
+                 <?php 
+                 if($skill_result) {
+                    $count = 0 ;
+                    while($row = $skill_result->fetch_array()){
                                 
-                                if ($count = 0){
-                                    '<div class="row">';
-                                }
-                                '<div class ="col-md-3">';                               
-                                    echo '<h3>'.$row['name'] . '</h3>' . $row['category'] . "\n";
-                                '</div>';
-                                $count ++;
-                                if ($count = 4){
-                                    '</div>';
-                                    $count = 0;
-                                }   
-                            }
-                        } else { 
-                            echo "empty";
-                            }
+                        if ($count = 0){
+                            echo '<div class="row">';
+                        }
+                        echo '<div class ="col-md-3">';                               
+                        echo '<h3>'.$row['name'] . '</h3>' . '<h5>' .  $row['category'] . '</h5>';
+                        echo '</div>';
+                        $count ++;
+                        if ($count = 4){
+                            echo '</div>';
+                            $count = 0;
+                        }   
+
+                    }
+                } else { 
+                    echo "empty";
+                }
                     ?>
                 </div>
             </div>
