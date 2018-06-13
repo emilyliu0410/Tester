@@ -18,6 +18,17 @@
                             echo '<h4>'.$row['name'] . '</h4>' ;
                             echo '</div>';
                         }
+                        $count = 0;
+                        if ($count == 0){
+                            echo '<img src="././img/php.png" alt="php" width="0px"
+                            height="50px"/>';
+                            $count ++;
+                        }
+                        elseif($count == 1){
+                            echo '<img src="././img/html.png" alt="html" width="50px"
+                            height="50px"/>';
+                            $count ++;
+                        }
                     }
                     echo '</div>';
                 } else { 
@@ -28,12 +39,13 @@
                 <?php 
                  if($dskill_result) {
                     echo '<div class="row">';
-                        
+
                     while($row = $dskill_result->fetch_array()){
                                 
                             echo '<div class ="col-lg-6">';
                             echo '<h4>'.$row['name'] . '</h4>' ;
                             echo '</div>';
+                        
                     }
                     echo '</div>';
                 } else { 
