@@ -13,7 +13,7 @@
                      $count = 0;   
                     while($row = $skill_result->fetch_array()){
                                 
-                       if ($row['category'] == 'Programming skills'){
+                       
                             echo '<div class ="col-lg-3">';
                             echo '<font size="5">' . $row['name'] . '</font>' ;
                            
@@ -23,7 +23,7 @@
                             $count ++;
                         }
                         elseif($count == 1){
-                            echo '<img src="././img/html.png" alt="html" width="40px"
+                            echo '<img src="././img/html.png" alt="html" width="30px"
                             height="40px"/>';
                             $count ++;
                         }elseif($count == 2){
@@ -64,7 +64,7 @@
                             $count ++;
                         }
                          echo '</div>';
-                        }
+                        
                     }
                     echo '</div>';
                 } else { 
@@ -75,13 +75,23 @@
                 <?php 
                  if($dskill_result) {
                     echo '<div class="row">';
-
+                    $count = 0;
                     while($row = $dskill_result->fetch_array()){
                                 
                             echo '<div class ="col-lg-6">';
-                            echo '<h4>'.$row['name'] . '</h4>' ;
-                            echo '</div>';
-                        
+                            echo '<font size="5">'.$row['name'] . '</font>' ;
+                            
+                        if ($count == 0){
+                            echo '<img src="././img/ps.png" alt="php" width="40px"
+                            height="40px"/>';
+                            $count ++;
+                        }
+                        elseif($count == 1){
+                            echo '<img src="././img/lightroom.jpeg" alt="html" width="40px"
+                            height="40px"/>';
+                            $count ++;
+                        }
+                        echo '</div>';
                     }
                     echo '</div>';
                 } else { 
