@@ -19,90 +19,20 @@
 </head>
 
 <body>
+  <section id="contact" class="contact">
+    
     <div class="container">
+      <div class="row">
 
-        <!--Section: Contact v.2-->
-        <section class="section">
-
-            <!--Section heading-->
-            <h2 class="section-heading h1 pt-4">Contact us</h2>
-            
-
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-8 col-xl-9">
-                    <form id ="contact-form" name="contact-form" action="view/mail.php" method="POST">
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form">
-                                    <div class="md-form">
-                                        <input type="text" id="name" name="name" class="form-control">
-                                        <label for="name" class="">Your name</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form">
-                                    <div class="md-form">
-                                        <input type="text" id="email" name="email" class="form-control">
-                                        <label for="email" class="">Your email</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                    <label for="subject" class="">Subject</label>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form">
-                                    <textarea type="text" id="message" name="message" class="md-textarea"></textarea>
-                                    <label for="message">Your message</label>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                    </form>
-
-                    <div class="center-on-small-only">
-                        <a class="btn btn-primary" type="submit" onclick="this.disabled=true; this.value='Sending…';">Send</a>
+            <div class="col-lg-12 text-center" >
+                        <h2>Contact me</h2>
+                        <hr class="under_header">
                     </div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-4 col-xl-3">
+                <div class="col-md-6 col-xl-6">
                     <ul class="contact-icons">
                         <li><i class="fa fa-map-marker fa-2x"></i>
-                            <p>Room RA 65/F,
-                            Le Prestige Water Lilies(T5R), Lohas Park Tseung Kwan O
-                              </p>
+                            <p>Room RA 65/F,Le Prestige Water Lilies(T5R), Lohas Park Tseung Kwan O
+                            </p>
                         </li>
 
                         <li><i class="fa fa-phone fa-2x"></i>
@@ -118,13 +48,9 @@
 
             </div>
 
-        </section>
-        <!--Section: Contact v.2-->
-
-
-
-
     </div>
+   </section>
+
 
     <!-- SCRIPTS -->
     <!-- JQuery -->

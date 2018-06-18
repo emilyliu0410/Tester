@@ -17,7 +17,8 @@
 
 .profile{
 	background-color: #dddddd;
-	height: 500px;padding-top: 50px;
+	
+	padding-top: 60px;
 }
 
 .profile h2{
@@ -26,24 +27,33 @@
 
 .profile p{
 	color: #000000;
+	padding-top: 50px;
 }
 
 
 
 .skills{
-	background-color: #ffffff;height: 500px
+	background-color: #ffffff;
+	
+	padding-top: 100px;
 }
 
 .skills h2 {
 	color: #ffcc00
 }
+.skills p {
+	display: inline;
+	padding-left: 10px;
+	font-size: 40px;
+}
 
 .educations {
 	background-color: #dddddd;
+	padding-top: 100px;
 }
 
 .educations h2{
-	color: #ffcc00
+	color: #ffcc00;
 }
 
 .educations h4{
@@ -51,11 +61,13 @@
 }
 
 .ed_information{
-	margin-left: 100px; margin-right: 100px;
+	margin-left: 100px; 
+	margin-right: 100px;
 }
 
 .experience{
-	background-color: #ffffff
+	background-color: #ffffff;
+	padding-top: 100px;
 }
 
 .experience h2{
@@ -63,7 +75,8 @@
 }
 
 .contact {
-	background-color: #dddddd
+	background-color: #dddddd;
+	padding-top: 100px;
 }
 
 .contact h2{
