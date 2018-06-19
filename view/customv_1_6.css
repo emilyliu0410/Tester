@@ -18,7 +18,8 @@
 .profile{
 	background-color: #dddddd;
 	
-	padding-top: 60px;
+	padding-top: 50px;
+	padding-bottom: 70px;
 }
 
 .profile h2{
@@ -27,7 +28,7 @@
 
 .profile p{
 	color: #000000;
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
 
@@ -35,21 +36,29 @@
 .skills{
 	background-color: #ffffff;
 	
-	padding-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 100px
 }
 
 .skills h2 {
 	color: #ffcc00
 }
+
+.skills h3{
+	padding-top: 10px
+}
+
 .skills p {
 	display: inline;
+	padding-top: 10px;
 	padding-left: 10px;
-	font-size: 40px;
+	font-size: 35px;
+
 }
 
 .educations {
 	background-color: #dddddd;
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 .educations h2{
@@ -60,14 +69,19 @@
 	color: #777777
 }
 
+.degree {
+	color: #777777
+}
+
 .ed_information{
 	margin-left: 100px; 
 	margin-right: 100px;
 }
 
+
 .experience{
 	background-color: #ffffff;
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 .experience h2{
@@ -76,7 +90,8 @@
 
 .contact {
 	background-color: #dddddd;
-	padding-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 60px;
 }
 
 .contact h2{

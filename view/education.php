@@ -13,7 +13,7 @@
                             <?php 
         				    if($result){
         				        while($row = $result->fetch_array()){
-                		      		echo '<h3>'.$row['school'] . '</h3>' . '<h4>' . $row['place_name'] . '</h4>' . '<h5>' . $row['start_date'] . "-" . $row['end_date'] . '</h5>'. $row['description'] ;
+                		      		echo '<h3>'.$row['school'] . '</h3>' . '<h4>' . $row['place_name'] . '</h4>' . '<h5>' . $row['start_date'] . "-" . $row['end_date'] . '</h5>'. '<h5 class="degree">'. $row['degree'] . '</h5>' . '<h6>'. $row['major'] . $row['minor'] . '</h6>'. $row['description'] ;
                 				echo nl2br("\n");
                 				echo nl2br("\n");
         				        }

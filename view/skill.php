@@ -39,7 +39,7 @@
                             echo '<div class ="col-lg-6">';
                             echo '<img src="././img/' . $row['name'] . '.png" alt="php" width="50px" height="50px"/>';
 
-                            echo '<font size="5">'.$row['name'] . '</font>' ;
+                            echo '<p>'.$row['name'] . '</p>' ;
                             
                         
                         echo '</div>';

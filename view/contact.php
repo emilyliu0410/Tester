@@ -31,7 +31,7 @@
                 <div class="col-md-6 col-xl-6">
                     <ul class="contact-icons">
                         <li><i class="fa fa-map-marker fa-2x"></i>
-                            <p>Room RA 65/F,Le Prestige Water Lilies(T5R), Lohas Park Tseung Kwan O
+                            <p>Room RA 65/F,Le Prestige Water Lilies(T5R), Lohas Park <br> Tseung Kwan O, Hong Kong
                             </p>
                         </li>
 
