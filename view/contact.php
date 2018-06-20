@@ -40,7 +40,7 @@
                         </li>
 
                         <li><i class="fa fa-envelope fa-2x"></i>
-                            <p>yingpik67@hotmail.com</p>
+                            <p>contact@liuyingpik.com</p>
                         </li>
                     </ul>
                 </div>
